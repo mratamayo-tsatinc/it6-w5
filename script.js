@@ -28,7 +28,7 @@ const QUESTION_CONFIG = {
     // its default CIDR prefix based on address class (A: 1–126 -> /8,
     // B: 128–191 -> /16, C: 192–223 -> /24). Loopback (127.x) is excluded.
     enableClassCidr: true,
-    numClassCidr: 6,
+    numClassCidr: 10,
 
     // Grading
     strictLeadingZeros: true // binary answers must match bit-width exactly
@@ -42,7 +42,7 @@ let currentUser = "";
 // Settings and Mode Management
 let appSettings = {
     mode: 'exam', // 'practice' or 'exam'
-    timerMinutes: 20,
+    timerMinutes: 30,
     autoShowSample: true // whether the console panel auto-opens when an exercise has sample output; device-based default set below
 };
 
